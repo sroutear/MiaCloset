@@ -1,0 +1,199 @@
+@import "./common.css";
+
+/* ---------------------- common setting ---------------------- */
+h2{
+    color: #5D4C49;  
+    font-family: 'Sawarabi Gothic', 'Lucida Sans';
+}
+
+.wrap{
+    max-width: 978px;
+    margin: 50px auto;
+}
+
+a{
+    text-decoration: none;
+}
+/* ---------------------- breadcrumb ---------------------- */
+.breadcrumb-wrap{
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0 0 20px 0;
+}
+
+li.breadcrumb-item{
+    transition: .5s;
+}
+
+li.breadcrumb-item.active{
+    color: #666; 
+    font-size: 14px;
+}
+
+li.breadcrumb-item > a{
+    text-decoration: none;
+    color: #666; 
+    font-size: 14px;
+}
+
+
+li.breadcrumb-item:hover a{
+    color: #EE6E6E;
+    border-bottom: 1px solid #EE6E6E;
+}
+
+.active::before{
+    content: ">";
+    color: #666;
+    margin-right: 10px;
+}
+
+/* ---------------------- step ---------------------- */
+ul.step-list{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+ul.step-list > li{
+    background-color: #cdd9e4;
+    color: #7799bc;
+    text-align: center;
+    padding: 0 30px;
+    position: relative;
+}
+
+.ret{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 0 10px 17.3px;
+    border-color: transparent transparent transparent #cdd9e4;
+    position: absolute;
+    right: -22px;
+    top: 25px;
+}
+
+ul.step-list > li > h3{
+    margin: 10px 0 0 0;
+}
+
+ul.step-list > li > p{
+    margin: 0 0 10px 0;
+    font-size: 14px;
+}
+
+ul.step-list > li.step-active{
+    background-color: #7799bc;
+    color: #fff;
+}
+
+/* ---------------------- table ---------------------- */
+.table-wrap{
+    width: 100%;
+}
+
+.table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table > thead{
+    color: #5D4C49;
+    font-size: 20px;
+}
+
+.table > tbody{
+    color: #333;
+    text-align: center;   
+}
+
+.table > tbody > tr {
+    border-top: 1px solid #eee; 
+    border-bottom: 1px solid #eee;
+}
+
+tr.table-title{
+    text-align: center;
+    /* background-color: #eee; */
+    border-top: 1px solid #eee; 
+    border-bottom: 1px solid #eee;
+}
+
+td.img-wrap{
+    width: 15%;
+}
+
+
+img.pro-pic{
+    width: 100%;
+}
+
+td.item-name{
+    text-align: left;
+    width: 30%;
+}
+
+.table > tfoot > tr {
+    border-top: 1px solid #eee; 
+    border-bottom: 1px solid #eee;
+}
+
+td.total{
+    text-align: right;
+}
+
+td.total > span {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+/* ---------------------- step-btn ---------------------- */
+.step-btn{
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.step-btn a{
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+a.prev{
+    background-color: #999;
+    transition: .3s;
+}
+
+a.next{
+    background-color: #F41E1E;
+    transition: .3s;
+}
+
+a.prev:hover{
+    background-color: #666;
+}
+
+a.next:hover{
+    background-color: #D32020;
+}
+
+a.prev::before{
+    content: "\f060";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1em;
+    margin-right: 5px;
+}
+
+a.next::after{
+    content: "\f061";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1em;
+    margin-left: 5px;
+}

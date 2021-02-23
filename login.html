@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Mia Closet</title>
+    <link rel="stylesheet" href="css/login.css">
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.12/vue.js"></script> -->
+    <script src="js/vue.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="nav-bar">
+            <ul class="nav-left">
+                <li>
+                    <a id="logo" href="index.html">Mia Closet</a>
+                </li>
+                <li>
+                    <a href="products.html">Products</a>
+                </li>
+                <li>
+                    <a href="stores.html">Stores</a>
+                </li>
+            </ul>
+            <ul class="nav-right">             
+                <li class="btn_left">
+                    <a href="login.html"></a>
+                </li>
+                <li class="btn_right">
+                    <a href="cart.html"></a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- 登入註冊區塊 -->
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+            <form action="#">
+                <h2>新規会員登録</h2>
+                <input type="text" id="signUpName" placeholder="お名前" />
+                <input type="email" id="sigUpEmail" placeholder="メールアドレス" />
+                <input type="text" id="signUpAccount" placeholder="ログインID" />
+                <input type="password" id="signUpPsw" placeholder="パスワード" />
+                <button type="button" id="signUpSubmit">会員登録</button>
+            </form>
+        </div>
+      
+        <div class="form-container sign-in-container">
+            <form action="#">
+                <h2>会員ログイン</h2>
+                <input type="email" id="signInAccount" placeholder="ログインID" />
+                <input type="password" id="signInPsw" placeholder="パスワード" />
+                <span id="forgetPsw">パスワードを忘れた場合はこちら</span>
+                <button type="button" id="signInSubmit">ログイン</button>
+            </span>
+        </div>
+      
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <button type="button" class="check" id="signIn">ログイン</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <button type="button" class="check" id="signUp">新規登録</button>
+                </div>
+            </div>
+        </div> 
+    </div>
+    
+    <footer>
+        <p>©2021 All Rights Reserved.</p>
+    </footer>
+    <script>
+        // let vm = new Vue(); //vue instance
+        new Vue({
+            el: '#app',  //el: document.getElementById('app'),
+            data: {   //變數存放的地方
+
+            },
+        });  
+    </script>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+
+    <script>
+        // 登入註冊區塊
+        const signUpButton = document.getElementById('signUp');
+        const signInButton = document.getElementById('signIn');
+        const container = document.getElementById('container');
+
+        signUpButton.addEventListener('click', () => {
+            container.classList.add("right-panel-active");
+        });
+
+        signInButton.addEventListener('click', () => {
+            container.classList.remove("right-panel-active");
+        });
+    </script>
+</body>
+</html>

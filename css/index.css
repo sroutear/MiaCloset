@@ -1,0 +1,152 @@
+@import "./common.css";
+
+/* ---------------------- common setting ---------------------- */
+h2{
+    color: #5D4C49;  
+    font-family: 'Sawarabi Gothic', 'Lucida Sans';
+}
+
+.wrap{
+    max-width: 978px;
+    margin: 50px auto;
+}
+
+.m-title{
+    background-image: url(../images/Pink_flower.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-align: center;
+    padding: 1px;
+    margin: 30px 0;
+}
+
+
+/* ---------------------- section gategory-title ---------------------- */
+
+ul.gategory{
+    display: flex;
+    /* justify-items: space-between; */
+    /* align-items: center; */
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul.gategory > li{
+    width: 190px;
+    text-align: center;
+    padding: 20px 0;
+    border-right: 1px solid #cdd9e4;
+    transition: .3s;
+}
+
+ul.gategory > li:nth-child(7){
+    border-right: none;
+}
+
+ul.gategory > li > a{
+    text-decoration: none;
+    color: #5D4C49;
+    padding: 20px 10px;
+}
+
+ul.gategory > li:hover{    
+    background-color: #cdd9e4;
+}
+
+ul.gategory > li:hover a{
+    color: #fff;
+}
+ 
+.copon> img{
+    width: 100%;
+}
+
+
+/* ---------------------- section New Arrival ---------------------- */
+.item-wrap{
+    width: 100%;
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.item{
+    width: 28%;
+    margin: 20px;
+    /* border: 1px solid #D8D8D8; */
+    background-color: #fff;
+    /* box-shadow: 3px 3px 10px #D8D8D8; */
+    position: relative;
+    transition: .5s;
+    top: 0px;
+}
+
+.item a{
+    text-decoration: none;
+}
+
+.item .pic{
+    overflow: hidden;
+}
+
+.pic > img{
+    width: 100%;
+    vertical-align: middle;
+    transform: scale(1);
+    transition: .5s;
+}
+  
+.item:hover{
+    background-color: #cdd9e4;
+    box-shadow: 3px 3px 10px #EDEDED;
+}
+
+.item:hover .pic>img{
+    transform: scale(1.2);
+}
+
+.item h4{
+    text-align: left;
+    color: #555;
+    overflow:hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin: 10px 0 5px 0;
+}
+
+.item p{
+    text-align: center;
+    color: #555;
+    margin: 5px 0 10px 0;
+}
+
+.item .txt{
+    padding: 15px;
+    position: relative;
+}
+
+
+/* ---------------------- section mail ---------------------- */
+.pic-bg{
+    background: url(../images/bg.jfif) 50% no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    padding: 80px;
+}
+
+.mail-txt{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    color: #fff;
+}
+
+#email{
+    padding: 8px;
+    width: 400px;
+    /* border-radius: 5px; */
+}
+

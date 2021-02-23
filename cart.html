@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Mia Closet</title>
+    <link rel="stylesheet" href="css/cart.css">
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.12/vue.js"></script> -->
+    <script src="js/vue.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css" />
+</head>
+<body>
+    <header>
+        <div class="nav-bar">
+            <ul class="nav-left">
+                <li>
+                    <a id="logo" href="index.html">Mia Closet</a>
+                </li>
+                <li>
+                    <a href="products.html">Products</a>
+                </li>
+                <li>
+                    <a href="stores.html">Stores</a>
+                </li>
+            </ul>
+            <ul class="nav-right">             
+                <li class="btn_left">
+                    <a href="login.html"></a>
+                </li>
+                <li class="btn_right">
+                    <a href="cart.html"></a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="wrap" id="pro-wrap">
+        <div class="breadcrumb">
+            <ol class="breadcrumb-wrap">
+                <li class="breadcrumb-item"><a href="index.html">TOP</a></li>
+                <li class="breadcrumb-item active">ショッピングカート</li>
+            </ol>
+        </div>
+        <div class="content-wrap">
+            <ul class="step-list">
+                <li class="step step-active">
+                    <h3>STEP1</h3>
+                    <p>ショッピングカート</p>
+                    <div class="ret"></div>
+                </li>
+                <li>
+                    <h3>STEP2</h3>
+                    <p>お届け先・お支払い方法・お届け日時などの指定</p>
+                    <div class="ret"></div>
+                </li>
+                <li>
+                    <h3>STEP3</h3>
+                    <p>ご注文内容の確認</p>
+                    <div class="ret"></div>
+                </li>
+                <li>
+                    <h3>STEP4</h3>
+                    <p>ご注文手続き完了</p>
+                </li>
+            </ul>
+            <div class="table-wrap">
+                <table class="table" cellpadding="10">
+                    <thead>
+                        <tr>
+                            <th colspan="6">現在のカートの中身</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table-title">
+                            <td colspan="2">商品情報</td>
+                            <td>価格</td>
+                            <td>数量</td>
+                            <td>小計</td>
+                            <td>削除</td>
+                        </tr>
+                        <tr>
+                            <td class="img-wrap"><img class="pro-pic" src="images/i1.jpg" alt=""></td>
+                            <td class="item-name">バイカラードレープスリーブシャツ</td>
+                            <td>￥15,400(税込)</td>
+                            <td>1</td>
+                            <td>￥15,400(税込)</td>
+                            <td>×</td>
+                        </tr>
+                        <tr>
+                            <td class="img-wrap"><img class="pro-pic" src="images/i2.jpg" alt=""></td>
+                            <td class="item-name">ラインアートフラワービスチェ付プリーツスカート</td>
+                            <td>￥18,700(税込)</td>
+                            <td>1</td>
+                            <td>￥18,700(税込)</td>
+                            <td>×</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td></td>
+                            <td class="total" colspan="4">合計（税込）<span class="total-price">¥34,100</span></td>
+                            <td></td>
+                        </tr>
+                    </tfoot>
+                </table>
+                <div class="step-btn">
+                    <a href="products.html" class="prev">ショッピングを続ける</a>
+                    <a href="" class="next">ご注文手続きへ</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer>
+        <p>©2021 All Rights Reserved.</p>
+    </footer>
+    <script>
+        // let vm = new Vue(); //vue instance
+        new Vue({
+            el: '#app',  //el: document.getElementById('app'),
+            data: {   //變數存放的地方
+
+            },
+        });  
+    </script>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="./slick/slick.min.js"></script>
+
+    <script>
+       
+    </script>
+</body>
+</html>

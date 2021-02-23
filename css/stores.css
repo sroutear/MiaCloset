@@ -1,0 +1,124 @@
+@import "./common.css";
+
+/* ---------------------- common setting ---------------------- */
+h2{
+    color: #5D4C49;  
+    font-family: 'Sawarabi Gothic', 'Lucida Sans';
+}
+
+.wrap{
+    max-width: 978px;
+    margin: 50px auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* ---------------------- breadcrumb ---------------------- */
+.breadcrumb-wrap{
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0 0 20px 0;
+}
+
+li.breadcrumb-item{
+    transition: .5s;
+}
+
+li.breadcrumb-item.active{
+    color: #666; 
+    font-size: 14px;
+}
+
+li.breadcrumb-item > a{
+    text-decoration: none;
+    color: #666; 
+    font-size: 14px;
+}
+
+
+li.breadcrumb-item:hover a{
+    color: #EE6E6E;
+    border-bottom: 1px solid #EE6E6E;
+}
+
+.active::before{
+    content: ">";
+    color: #666;
+    margin-right: 10px;
+}
+
+/* ---------------------- tab ---------------------- */
+/* 整個頁籤及內容最外層區塊 */
+div.tab_container{
+  min-height: 750px;
+}
+
+/* 頁籤區塊 */
+div.tab_container div.tab_list_block{
+    /* padding-left: 20px; */
+}
+  
+/* 頁籤列表 */
+div.tab_container div.tab_list_block ul.tab_list{
+    list-style: none;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+div.tab_container div.tab_list_block ul.tab_list > li{
+    display: inline-block;
+    padding: 0;
+}
+
+div.tab_container div.tab_list_block ul.tab_list > li > a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 60px;
+    border-radius: 5px 5px 0 0;
+    cursor: pointer;
+    color: #7799bc;
+    position: relative;
+    top: 0px;
+    background-color: #cdd9e4;
+    font-size: 20px;
+}
+
+/* 頁籤內容區塊 */
+div.tab_container div.tab_contents{
+    background-color: #7799bc;
+}
+
+div.tab_container div.tab_contents div.tab{
+    padding: 10px;
+    display: none;
+}
+
+div.tab_container div.tab_contents div.tab.-on{
+    display: block;
+}
+
+div.tab_container div.tab_list_block ul.tab_list > li > a.-on{
+    color: #fff;
+    background-color: #7799bc;
+}
+
+.txt{
+    color: #fff;
+    padding: 20px;
+}
+
+.txt h4{
+    border-bottom: 2px dotted #cdd9e4;
+    font-weight: 500;
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.txt p{
+    display: inline-block;
+    margin: 0;
+}
