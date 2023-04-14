@@ -1,0 +1,61 @@
+@import "./common.css";
+
+/* ---------------------- common setting ---------------------- */
+h2{
+    color: #5D4C49;  
+    font-family: 'Sawarabi Gothic', 'Lucida Sans';
+}
+
+.wrap{
+    max-width: 978px;
+    margin: 50px auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* ---------------------- breadcrumb ---------------------- */
+.breadcrumb-wrap{
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0 0 20px 0;
+}
+
+li.breadcrumb-item{
+    transition: .5s;
+}
+
+li.breadcrumb-item.active{
+    color: #666; 
+    font-size: 14px;
+}
+
+li.breadcrumb-item > a{
+    text-decoration: none;
+    color: #666; 
+    font-size: 14px;
+}
+
+li.breadcrumb-item:hover a{
+    color: #EE6E6E;
+    border-bottom: 1px solid #EE6E6E;
+}
+
+.active::before{
+    content: ">";
+    color: #666;
+    margin-right: 10px;
+}
+
+
+/* main */
+.concept_item{
+    display: flex;
+    align-items: center;
+}
+
+.detail{
+    padding-left: 50px;
+}

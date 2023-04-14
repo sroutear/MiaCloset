@@ -22,7 +22,7 @@ ul{
 
 li{
     display: inline-block;
-    padding: 0 5px;
+    padding: 0 10px;
     vertical-align: middle;
 }
 
@@ -35,11 +35,20 @@ ul.nav-left > li  a{
     color: #7799bc;
 }
 
+ul.nav-left > li a:hover{
+ color: white;
+}
+
 #logo{
     color: #5D4C49;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
-    font-size: 24px;
+    font-size: 25px;
+    font-weight: bold;
     margin-right: 20px;
+}
+
+#logo:hover{
+    opacity: .7;
 }
 
 a{
@@ -63,6 +72,7 @@ a{
     font-size: 1.5em;
     color: #7799bc;
 }
+
 
 
 /* ---------------------- footer ---------------------- */

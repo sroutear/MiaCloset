@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Mia Closet</title>
+    <link rel="stylesheet" href="css/concept.css">
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.12/vue.js"></script> -->
+    <script src="js/vue.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="nav-bar">
+            <ul class="nav-left">
+                <li>
+                    <a id="logo" href="index.html">Mia Closet</a>
+                </li>
+                <li>
+                    <a href="concept.html">Concept</a>
+                </li>
+                <!-- <li>
+                    <a href="news.html">News</a>
+                </li> -->
+                <li>
+                    <a href="products.html">Products</a>
+                </li>
+                <li>
+                    <a href="stores.html">Stores</a>
+                </li>
+            </ul>
+            <ul class="nav-right">             
+                <li class="btn_left">
+                    <a href="login.html"></a>
+                </li>
+                <li class="btn_right">
+                    <a href="cart.html"></a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- main區塊 -->
+    <section class="wrap">
+        <div class="breadcrumb">
+            <ol class="breadcrumb-wrap">
+                <li class="breadcrumb-item"><a href="index.html">TOP</a></li>
+                <li class="breadcrumb-item active">Concept</li>
+            </ol>
+        </div>
+        <div class="concept_item">
+            <div class="photo">
+                <img src="https://www.nostalgia-online.jp/recruit/r-image-4.jpg" alt="">
+            </div>
+            <div class="detail">
+                <p>
+                ～シンプルなのに女らしいが叶う～<br>
+                モードテイストをベースに、<br>
+                オンタイム オフタイムをトータルで提案します。<br>
+                飾らない自分を常に求め、都会的で洗練された<br>
+                自分のマインドを持ったワーキングウーマンへ・・・<br>
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <p>©2023 All Rights Reserved.</p>
+    </footer>
+    <script>
+        // let vm = new Vue(); //vue instance
+        new Vue({
+            el: '#app',  //el: document.getElementById('app'),
+            data: {   //變數存放的地方
+
+            },
+        });  
+    </script>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+
+    <script>
+        // 登入註冊區塊
+        const signUpButton = document.getElementById('signUp');
+        const signInButton = document.getElementById('signIn');
+        const container = document.getElementById('container');
+
+        signUpButton.addEventListener('click', () => {
+            container.classList.add("right-panel-active");
+        });
+
+        signInButton.addEventListener('click', () => {
+            container.classList.remove("right-panel-active");
+        });
+    </script>
+</body>
+</html>
