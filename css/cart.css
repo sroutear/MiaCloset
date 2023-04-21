@@ -9,6 +9,7 @@ h2{
 .wrap{
     max-width: 978px;
     margin: 50px auto;
+    min-height: 100%;
 }
 
 a{
@@ -47,6 +48,12 @@ li.breadcrumb-item:hover a{
     content: ">";
     color: #666;
     margin-right: 10px;
+}
+
+
+/* ---------------------- cart content ---------------------- */
+.content-wrap{
+    padding-bottom: 40px;
 }
 
 /* ---------------------- step ---------------------- */

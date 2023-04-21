@@ -30,17 +30,18 @@ ul.gategory{
     /* align-items: center; */
     padding: 0;
     box-sizing: border-box;
+    flex-wrap:wrap;
 }
 
 ul.gategory > li{
-    width: 190px;
+    width: 160px;
     text-align: center;
     padding: 20px 0;
     border-right: 1px solid #cdd9e4;
     transition: .3s;
 }
 
-ul.gategory > li:nth-child(7){
+ul.gategory > li:nth-child(6){
     border-right: none;
 }
 
@@ -144,7 +145,7 @@ ul.gategory > li:hover a{
     color: #fff;
 }
 
-#email{
+section#email{
     padding: 8px;
     width: 400px;
     /* border-radius: 5px; */

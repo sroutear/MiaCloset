@@ -7,28 +7,24 @@
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.12/vue.js"></script> -->
     <script src="js/vue.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/hamburgers.css">
 </head>
 <body>
     <header>
         <div class="nav-bar">
-            <ul class="nav-left">
-                <li>
-                    <a id="logo" href="index.html">Mia Closet</a>
-                </li>
+            <div class="nav-left">
+                <a id="logo" href="index.html">Mia Closet</a>
+            </div>
+            <ul class="nav-right">  
                 <li>
                     <a href="concept.html">Concept</a>
                 </li>
-                <!-- <li>
-                    <a href="news.html">News</a>
-                </li> -->
                 <li>
                     <a href="products.html">Products</a>
                 </li>
                 <li>
                     <a href="stores.html">Stores</a>
-                </li>
-            </ul>
-            <ul class="nav-right">             
+                </li>           
                 <li class="btn_left">
                     <a href="login.html"></a>
                 </li>
@@ -36,11 +32,69 @@
                     <a href="cart.html"></a>
                 </li>
             </ul>
+            <button class="hamburger hamburger--elastic" type="button">
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+            </button>
         </div>
+        <ul id="nav-list">  
+            <li>
+                <a href="concept.html">Concept</a>
+            </li>
+            <li>
+                <a href="products.html">Products</a>
+            </li>
+            <li>
+                <a href="stores.html">Stores</a>
+            </li>           
+            <li>
+                <a href="login.html">会員登録</a>
+            </li>
+            <li>
+                <a href="cart.html">カート</a>
+            </li>
+        </ul>
     </header>
 
+    <section class="wrap" id="pro-wrap">
+        <div class="breadcrumb">
+            <ol class="breadcrumb-wrap">
+                <li class="breadcrumb-item"><a href="index.html">TOP</a></li>
+                <li class="breadcrumb-item active">ログイン</li>
+            </ol>
+        </div>
+        <div class="content-wrap">
+            <div class="form-wrap">
+                <div class="form-title">
+                    <h3>会員の方</h3>
+                </div>
+                <div class="form-content">
+                    <p>ログインIDをお持ちの方は、こちらからログインを行ってください。</p>
+                    <input type="email" id="signInAccount" placeholder="ログインID（メールアドレス）" />  
+                    <input type="password" id="signInPsw" placeholder="パスワード" />
+                    <p id="forgetPsw">► パスワードを忘れた場合はこちら</p>
+                    <button type="button" id="signInSubmit" class="btn">ログイン</button>
+                </div>
+            </div>
+            <hr>
+            <div class="form-wrap">
+                <div class="form-title">
+                    <h3>会員でない方</h3>
+                </div>
+                <div class="form-content">
+                    <p>会員登録がお済みで無い方はこちらから登録をお願いいたします。</p>
+                    <input type="email" id="sigUpEmail" placeholder="メールアドレス" />
+                    <input type="text" id="signUpAccount" placeholder="ログインID" />
+                    <input type="password" id="signUpPsw" placeholder="パスワード" />
+                    <button type="button" id="signUpSubmit" class="btn">新規登録</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- 登入註冊區塊 -->
-    <div class="container" id="container">
+    <!-- <div class="container" id="container">
         <div class="form-container sign-up-container">
             <form action="#">
                 <h2>新規会員登録</h2>
@@ -73,7 +127,7 @@
             </div>
         </div> 
     </div>
-    
+     -->
     <footer>
         <p>©2023 All Rights Reserved.</p>
     </footer>
@@ -89,10 +143,11 @@
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script ttype="text/javascript" src="./js/hamburgers.js"></script>
 
-
-    <script>
-        // 登入註冊區塊
+    <!-- 登入註冊區塊 -->
+    <!-- <script>
+        
         const signUpButton = document.getElementById('signUp');
         const signInButton = document.getElementById('signIn');
         const container = document.getElementById('container');
@@ -104,6 +159,6 @@
         signInButton.addEventListener('click', () => {
             container.classList.remove("right-panel-active");
         });
-    </script>
+    </script> -->
 </body>
 </html>

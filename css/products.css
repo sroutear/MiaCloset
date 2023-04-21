@@ -9,6 +9,7 @@ h2{
 .wrap{
     max-width: 978px;
     margin: 50px auto;
+    min-height: 100%;
 }
 
 a{
@@ -49,6 +50,7 @@ li.breadcrumb-item:hover a{
 /* ---------------------- content-wrap ----------------------- */
 .content-wrap{
     display: flex;
+    padding-bottom: 40px;
 }
 
 

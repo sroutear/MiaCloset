@@ -7,28 +7,24 @@
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.12/vue.js"></script> -->
     <script src="js/vue.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/hamburgers.css">
 </head>
 <body>
     <header>
         <div class="nav-bar">
-            <ul class="nav-left">
-                <li>
-                    <a id="logo" href="index.html">Mia Closet</a>
-                </li>
+            <div class="nav-left">
+                <a id="logo" href="index.html">Mia Closet</a>
+            </div>
+            <ul class="nav-right">  
                 <li>
                     <a href="concept.html">Concept</a>
                 </li>
-                <!-- <li>
-                    <a href="news.html">News</a>
-                </li> -->
                 <li>
                     <a href="products.html">Products</a>
                 </li>
                 <li>
                     <a href="stores.html">Stores</a>
-                </li>
-            </ul>
-            <ul class="nav-right">             
+                </li>           
                 <li class="btn_left">
                     <a href="login.html"></a>
                 </li>
@@ -36,7 +32,29 @@
                     <a href="cart.html"></a>
                 </li>
             </ul>
+            <button class="hamburger hamburger--elastic" type="button">
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+            </button>
         </div>
+        <ul id="nav-list" class="list-active">  
+            <li>
+                <a href="concept.html">Concept</a>
+            </li>
+            <li>
+                <a href="products.html">Products</a>
+            </li>
+            <li>
+                <a href="stores.html">Stores</a>
+            </li>           
+            <li>
+                <a href="login.html">会員登録</a>
+            </li>
+            <li>
+                <a href="cart.html">カート</a>
+            </li>
+        </ul>
     </header>
 
     <!-- main區塊 -->
@@ -48,16 +66,28 @@
             </ol>
         </div>
         <div class="concept_item">
-            <div class="photo">
-                <img src="https://www.nostalgia-online.jp/recruit/r-image-4.jpg" alt="">
+            <div class="concept-title">
+                <pre> 女らしいが叶う</pre>
+                <pre>シンプルなのに</pre>
             </div>
-            <div class="detail">
+            <div class="pic img01"><img src="images/img01.jpg" alt=""></div>
+            <div class="pic img02"><img src="images/img02.jpg" alt=""></div>
+            <div class="pic img03"><img src="images/img03.jpg" alt=""></div>
+            <div class="detail txt01">
                 <p>
-                ～シンプルなのに女らしいが叶う～<br>
-                モードテイストをベースに、<br>
-                オンタイム オフタイムをトータルで提案します。<br>
-                飾らない自分を常に求め、都会的で洗練された<br>
-                自分のマインドを持ったワーキングウーマンへ・・・<br>
+                    モードテイストをベースに、<br>
+                    オンタイム、オフタイムをトータルで提案します。
+                </p>
+                <p>
+                    細部にまでこだわったディテール、 <br>
+                    女性の美しいシルエットの魅せ方への追求。<br> 
+                    お洋服を愛する世界の女性に贈るグローバルブランドです。
+                </p>
+            </div>
+            <div class="detail txt02">
+                <p>
+                    飾らない自分を常に求め、都会的で洗練された<br>
+                    自分のマインドを持ったワーキングウーマンへ…<br>
                 </p>
             </div>
         </div>
@@ -78,7 +108,7 @@
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-
+    <script ttype="text/javascript" src="./js/hamburgers.js"></script>
 
     <script>
         // 登入註冊區塊

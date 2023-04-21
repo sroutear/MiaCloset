@@ -1,7 +1,168 @@
 @import "./common.css";
 
+/* ---------------------- common setting ---------------------- */
+h2{
+    color: #5D4C49;  
+    font-family: 'Sawarabi Gothic', 'Lucida Sans';
+}
 
-h2 {
+.wrap{
+    max-width: 978px;
+    margin: 50px auto;
+	min-height: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* ---------------------- breadcrumb ---------------------- */
+.breadcrumb-wrap{
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0 0 20px 0;
+}
+
+li.breadcrumb-item{
+    transition: .5s;
+}
+
+li.breadcrumb-item.active{
+    color: #666; 
+    font-size: 14px;
+}
+
+li.breadcrumb-item > a{
+    text-decoration: none;
+    color: #666; 
+    font-size: 14px;
+}
+
+
+li.breadcrumb-item:hover a{
+    color: #EE6E6E;
+    border-bottom: 1px solid #EE6E6E;
+}
+
+.active::before{
+    content: ">";
+    color: #666;
+    margin-right: 10px;
+}
+
+
+
+/* ---------------------new form------------------ */
+
+.content-wrap{
+	display: flex;
+	/* border: #7799bc 1px solid; */
+	padding-bottom: 40px;
+}
+
+.form-wrap{
+	background-color: #FFFFFF;
+	display: flex;
+	align-items: center;
+	/* justify-content: center; */
+	flex-direction: column;
+	padding-left: 50px;
+	padding-right: 50px;
+	/* padding: 0px 50px 50px 50px; */
+	height: 100%;
+	text-align: center;
+	/* border: yellow 1px solid; */
+	height: 500px;
+	width: 50%;
+}
+
+hr{
+	/* backgroundß-color: #7799bc; */
+
+}
+/* .form-wrap:nth-child(1){
+	border-right: #7799bc 1px solid;
+} */
+
+.form-title{
+	width: 100%;
+	background-image: url(../images/Magnolia\ Beige.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.form-title h3{
+	color: #5D4C49; 
+}
+
+.form-content p{
+	color: #7799bc;
+}
+
+
+input {
+	background-color: #eee;
+	border: none;
+	padding: 10px;
+	margin: 8px 0;
+	width: 100%;
+}
+
+input:focus {
+    outline-color: #BDBDBD;
+}
+
+p#forgetPsw {
+	font-size: 14px;
+	transition: .3s;
+	/* padding: 10px; */
+    color: #888;
+	transition: 0.3s;
+}
+
+p#forgetPsw:hover {
+	cursor: pointer;
+    color: #F43752;
+}
+
+button.btn {
+	border-radius: 10px;
+	border: none;
+	background-color: #6287C0;
+    color: #FFFFFF;
+    margin-top: 20px;
+	font-size: 16px;
+	padding: 5px 30px;
+	letter-spacing: 1px;
+	transition: transform 80ms ease-in;
+}
+
+
+button.btn:active {
+	transform: scale(0.95);
+}
+
+button.btn:hover {
+    cursor: pointer;
+	background-color: #7799bc;
+}
+
+button.btn:focus {
+	outline: none;
+}
+
+button.btn.check {
+	background-color: transparent;
+	border-color: #FFFFFF;
+}
+
+
+/* --------old form------- */
+
+
+/* h2 {
 	margin: 0;
     font-weight: 500;
     color: #666;
@@ -168,7 +329,6 @@ input:focus {
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	/* padding: 0 10px; */
 	text-align: center;
 	top: 0;
 	height: 100%;
@@ -196,4 +356,4 @@ input:focus {
 
 
 
-
+ */

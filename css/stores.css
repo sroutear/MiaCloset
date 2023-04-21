@@ -9,6 +9,7 @@ h2{
 .wrap{
     max-width: 978px;
     margin: 50px auto;
+    min-height: 100%;
 }
 
 a{
@@ -54,6 +55,7 @@ li.breadcrumb-item:hover a{
 /* 整個頁籤及內容最外層區塊 */
 div.tab_container{
   min-height: 750px;
+  padding-bottom: 40px;
 }
 
 /* 頁籤區塊 */
@@ -69,6 +71,7 @@ div.tab_container div.tab_list_block ul.tab_list{
     padding: 0;
 }
 
+
 div.tab_container div.tab_list_block ul.tab_list > li{
     display: inline-block;
     padding: 0;
@@ -77,19 +80,21 @@ div.tab_container div.tab_list_block ul.tab_list > li{
 div.tab_container div.tab_list_block ul.tab_list > li > a{
     text-decoration: none;
     display: inline-block;
-    padding: 10px 60px;
-    border-radius: 5px 5px 0 0;
+    padding: 10px 30px;
+    border-radius: 30px;
     cursor: pointer;
-    color: #7799bc;
+    color: #cdd9e4;
     position: relative;
     top: 0px;
-    background-color: #cdd9e4;
+    /* background-color: #cdd9e4; */
+    border: #cdd9e4 1px solid;
     font-size: 20px;
+    margin: 0 10px;
 }
 
 /* 頁籤內容區塊 */
 div.tab_container div.tab_contents{
-    background-color: #7799bc;
+    /* background-color: #7799bc; */
 }
 
 div.tab_container div.tab_contents div.tab{
@@ -107,8 +112,9 @@ div.tab_container div.tab_list_block ul.tab_list > li > a.-on{
 }
 
 .txt{
-    color: #fff;
+    /* color: #fff; */
     padding: 20px;
+    color: #7799bc;
 }
 
 .txt h4{

@@ -1,240 +1,258 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Mia Closet</title>
-    <link rel="stylesheet" href="css/products.css">
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.12/vue.js"></script> -->
-    <script src="js/vue.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="./slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css" />
+  <meta charset="UTF-8">
+  <title>Mia Closet</title>
+  <link rel="stylesheet" href="css/products.css">
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.12/vue.js"></script> -->
+  <script src="js/vue.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="./slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css" />
+  <link rel="stylesheet" href="css/hamburgers.css">
 </head>
+
 <body>
-    <header>
-        <div class="nav-bar">
-            <ul class="nav-left">
-              <li>
-                <a id="logo" href="index.html">Mia Closet</a>
-              </li>
-              <li>
-                <a href="concept.html">Concept</a>
-              </li>
-              <!-- <li>
-                <a href="news.html">News</a>
-              </li> -->
-              <li>
-                <a href="products.html">Products</a>
-              </li>
-              <li>
-                  <a href="stores.html">Stores</a>
-              </li>
-            </ul>
-            <ul class="nav-right">             
-              <li class="btn_left">
-                  <a href="login.html"></a>
-              </li>
-              <li class="btn_right">
-                  <a href="cart.html"></a>
-              </li>
-            </ul>
-        </div>
-    </header>
+  <header>
+    <div class="nav-bar">
+      <div class="nav-left">
+        <a id="logo" href="index.html">Mia Closet</a>
+      </div>
+      <ul class="nav-right">
+        <li>
+          <a href="concept.html">Concept</a>
+        </li>
+        <li>
+          <a href="products.html">Products</a>
+        </li>
+        <li>
+          <a href="stores.html">Stores</a>
+        </li>
+        <li class="btn_left">
+          <a href="login.html"></a>
+        </li>
+        <li class="btn_right">
+          <a href="cart.html"></a>
+        </li>
+      </ul>
+      <button class="hamburger hamburger--elastic" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+    </div>
+    <ul id="nav-list">
+      <li>
+        <a href="concept.html">Concept</a>
+      </li>
+      <li>
+        <a href="products.html">Products</a>
+      </li>
+      <li>
+        <a href="stores.html">Stores</a>
+      </li>
+      <li>
+        <a href="login.html">会員登録</a>
+      </li>
+      <li>
+        <a href="cart.html">カート</a>
+      </li>
+    </ul>
+  </header>
 
-    <section class="wrap" id="pro-wrap">
-        <div class="breadcrumb">
-            <ol class="breadcrumb-wrap">
-                <li class="breadcrumb-item"><a href="index.html">TOP</a></li>
-                <li class="breadcrumb-item active"><a href="">アイテム一覧</a></li>
-            </ol>
-        </div>
-        <div class="content-wrap">
-            <div class="left-title-wrap">
-                <ol class="list-wrap">
-                    <li class="list-item">
-                        <a href="">アイテム一覧</a>
-                    </li>
-                    <li class="list-item">
-                        <a href="">アウター</a>
-                    </li>
-                    <li class="list-item">
-                        <a href="">トップス</a>
-                    </li>
-                    <li class="list-item">
-                        <a href="">ボトムス</a>
-                    </li>
-                    <li class="list-item">
-                        <a href="">ワンピース</a>
-                    </li>
-                    <li class="list-item">
-                        <a href="">シューズ</a>
-                    </li>
-                    <li class="list-item">
-                        <a href="">バッグ</a>
-                    </li>
-                </ol>
-                <form class="search">
-                    <input type="text" id="keywords" placeholder="Search">
-                    <button class="btn-search"></button>
-                </form>
+  <section class="wrap" id="pro-wrap">
+    <div class="breadcrumb">
+      <ol class="breadcrumb-wrap">
+        <li class="breadcrumb-item"><a href="index.html">TOP</a></li>
+        <li class="breadcrumb-item active"><a href="">アイテム一覧</a></li>
+      </ol>
+    </div>
+    <div class="content-wrap">
+      <div class="left-title-wrap">
+        <ol class="list-wrap">
+          <li class="list-item">
+            <a href="">アイテム一覧</a>
+          </li>
+          <li class="list-item">
+            <a href="">アウター</a>
+          </li>
+          <li class="list-item">
+            <a href="">トップス</a>
+          </li>
+          <li class="list-item">
+            <a href="">ボトムス</a>
+          </li>
+          <li class="list-item">
+            <a href="">ワンピース</a>
+          </li>
+          <li class="list-item">
+            <a href="">シューズ</a>
+          </li>
+        </ol>
+        <form class="search">
+          <input type="text" id="keywords" placeholder="Search">
+          <button class="btn-search"></button>
+        </form>
+      </div>
+      <div class="right-item-wrap">
+        <div class="item">
+          <a href="#">
+            <div class="pic">
+              <img src="images/i1.jpg">
             </div>
-            <div class="right-item-wrap">
-                <div class="item">
-                    <a href="#">
-                      <div class="pic">
-                        <img src="images/i1.jpg">
-                      </div>
-                      <div class="txt">
-                        <h4>バイカラードレープスリーブシャツ</h4>
-                        <p>￥15,400(税込)</p>
-                      </div>
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="#">
-                      <div class="pic">
-                        <img src="images/i2.jpg">
-                      </div>
-                      <div class="txt">
-                        <h4>バイカラードレープスリーブシャツ</h4>
-                        <p>￥15,400(税込)</p>
-                      </div>
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="#">
-                      <div class="pic">
-                        <img src="images/i3.jpg">
-                      </div>
-                      <div class="txt">
-                        <h4>バイカラードレープスリーブシャツ</h4>
-                        <p>￥15,400(税込)</p>
-                      </div>
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="#">
-                      <div class="pic">
-                        <img src="images/i4.jpg">
-                      </div>
-                      <div class="txt">
-                        <h4>バイカラードレープスリーブシャツ</h4>
-                        <p>￥15,400(税込)</p>
-                      </div>
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="#">
-                      <div class="pic">
-                        <img src="images/i5.jpg">
-                      </div>
-                      <div class="txt">
-                        <h4>バイカラードレープスリーブシャツ</h4>
-                        <p>￥15,400(税込)</p>
-                      </div>
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="#">
-                      <div class="pic">
-                        <img src="images/i6.jpg">
-                      </div>
-                      <div class="txt">
-                        <h4>バイカラードレープスリーブシャツ</h4>
-                        <p>￥15,400(税込)</p>
-                      </div>
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="#">
-                      <div class="pic">
-                        <img src="images/i7.jpg">
-                      </div>
-                      <div class="txt">
-                        <h4>バイカラードレープスリーブシャツ</h4>
-                        <p>￥15,400(税込)</p>
-                      </div>
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="#">
-                      <div class="pic">
-                        <img src="images/i8.jpg">
-                      </div>
-                      <div class="txt">
-                        <h4>バイカラードレープスリーブシャツ</h4>
-                        <p>￥15,400(税込)</p>
-                      </div>
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="#">
-                      <div class="pic">
-                        <img src="images/i9.jpg">
-                      </div>
-                      <div class="txt">
-                        <h4>バイカラードレープスリーブシャツ</h4>
-                        <p>￥15,400(税込)</p>
-                      </div>
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="#">
-                      <div class="pic">
-                        <img src="images/i10.jpg">
-                      </div>
-                      <div class="txt">
-                        <h4>バイカラードレープスリーブシャツ</h4>
-                        <p>￥15,400(税込)</p>
-                      </div>
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="#">
-                      <div class="pic">
-                        <img src="images/i11.jpg">
-                      </div>
-                      <div class="txt">
-                        <h4>バイカラードレープスリーブシャツ</h4>
-                        <p>￥15,400(税込)</p>
-                      </div>
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="#">
-                      <div class="pic">
-                        <img src="images/i12.jpg">
-                      </div>
-                      <div class="txt">
-                        <h4>バイカラードレープスリーブシャツ</h4>
-                        <p>￥15,400(税込)</p>
-                      </div>
-                    </a>
-                </div>
+            <div class="txt">
+              <h4>バイカラードレープスリーブシャツ</h4>
+              <p>￥15,400(税込)</p>
             </div>
+          </a>
         </div>
-    </section>
+        <div class="item">
+          <a href="#">
+            <div class="pic">
+              <img src="images/i2.jpg">
+            </div>
+            <div class="txt">
+              <h4>バイカラードレープスリーブシャツ</h4>
+              <p>￥15,400(税込)</p>
+            </div>
+          </a>
+        </div>
+        <div class="item">
+          <a href="#">
+            <div class="pic">
+              <img src="images/i3.jpg">
+            </div>
+            <div class="txt">
+              <h4>バイカラードレープスリーブシャツ</h4>
+              <p>￥15,400(税込)</p>
+            </div>
+          </a>
+        </div>
+        <div class="item">
+          <a href="#">
+            <div class="pic">
+              <img src="images/i4.jpg">
+            </div>
+            <div class="txt">
+              <h4>バイカラードレープスリーブシャツ</h4>
+              <p>￥15,400(税込)</p>
+            </div>
+          </a>
+        </div>
+        <div class="item">
+          <a href="#">
+            <div class="pic">
+              <img src="images/i5.jpg">
+            </div>
+            <div class="txt">
+              <h4>バイカラードレープスリーブシャツ</h4>
+              <p>￥15,400(税込)</p>
+            </div>
+          </a>
+        </div>
+        <div class="item">
+          <a href="#">
+            <div class="pic">
+              <img src="images/i6.jpg">
+            </div>
+            <div class="txt">
+              <h4>バイカラードレープスリーブシャツ</h4>
+              <p>￥15,400(税込)</p>
+            </div>
+          </a>
+        </div>
+        <div class="item">
+          <a href="#">
+            <div class="pic">
+              <img src="images/i7.jpg">
+            </div>
+            <div class="txt">
+              <h4>バイカラードレープスリーブシャツ</h4>
+              <p>￥15,400(税込)</p>
+            </div>
+          </a>
+        </div>
+        <div class="item">
+          <a href="#">
+            <div class="pic">
+              <img src="images/i8.jpg">
+            </div>
+            <div class="txt">
+              <h4>バイカラードレープスリーブシャツ</h4>
+              <p>￥15,400(税込)</p>
+            </div>
+          </a>
+        </div>
+        <div class="item">
+          <a href="#">
+            <div class="pic">
+              <img src="images/i9.jpg">
+            </div>
+            <div class="txt">
+              <h4>バイカラードレープスリーブシャツ</h4>
+              <p>￥15,400(税込)</p>
+            </div>
+          </a>
+        </div>
+        <div class="item">
+          <a href="#">
+            <div class="pic">
+              <img src="images/i10.jpg">
+            </div>
+            <div class="txt">
+              <h4>バイカラードレープスリーブシャツ</h4>
+              <p>￥15,400(税込)</p>
+            </div>
+          </a>
+        </div>
+        <div class="item">
+          <a href="#">
+            <div class="pic">
+              <img src="images/i11.jpg">
+            </div>
+            <div class="txt">
+              <h4>バイカラードレープスリーブシャツ</h4>
+              <p>￥15,400(税込)</p>
+            </div>
+          </a>
+        </div>
+        <div class="item">
+          <a href="#">
+            <div class="pic">
+              <img src="images/i12.jpg">
+            </div>
+            <div class="txt">
+              <h4>バイカラードレープスリーブシャツ</h4>
+              <p>￥15,400(税込)</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    
-    <footer>
-        <p>©2023 All Rights Reserved.</p>
-    </footer>
-    <script>
-        // let vm = new Vue(); //vue instance
-        new Vue({
-            el: '#app',  //el: document.getElementById('app'),
-            data: {   //變數存放的地方
 
-            },
-        });  
-    </script>
+  <footer>
+    <p>©2023 All Rights Reserved.</p>
+  </footer>
+  <script>
+    // let vm = new Vue(); //vue instance
+    new Vue({
+      el: '#app',  //el: document.getElementById('app'),
+      data: {   //變數存放的地方
 
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="./slick/slick.min.js"></script>
+      },
+    });  
+  </script>
 
-    <script>
-       
-    </script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="./slick/slick.min.js"></script>
+  <script ttype="text/javascript" src="./js/hamburgers.js"></script>
+  <script>
+
+  </script>
 </body>
+
 </html>
