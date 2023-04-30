@@ -8,6 +8,7 @@
     <script src="js/vue.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/hamburgers.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -67,13 +68,13 @@
         </div>
         <div class="concept_item">
             <div class="concept-title">
-                <pre> 女らしいが叶う</pre>
-                <pre>シンプルなのに</pre>
+                <pre  data-aos="fade-down" data-aos-duration="2000" data-aos-once="true"> 女らしいが叶う</pre>
+                <pre  data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">シンプルなのに</pre>
             </div>
-            <div class="pic img01"><img src="images/img01.jpg" alt=""></div>
-            <div class="pic img02"><img src="images/img02.jpg" alt=""></div>
-            <div class="pic img03"><img src="images/img03.jpg" alt=""></div>
-            <div class="detail txt01">
+            <div class="pic img01" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true"><img src="images/img01.jpg" alt=""></div>
+            <div class="pic img02" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true"><img src="images/img02.jpg" alt=""></div>
+            <div class="pic img03" data-aos="fade-left" data-aos-duration="2000" data-aos-once="true"><img src="images/img03.jpg" alt=""></div>
+            <div class="detail txt01" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
                 <p>
                     モードテイストをベースに、<br>
                     オンタイム、オフタイムをトータルで提案します。
@@ -84,7 +85,7 @@
                     お洋服を愛する世界の女性に贈るグローバルブランドです。
                 </p>
             </div>
-            <div class="detail txt02">
+            <div class="detail txt02" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
                 <p>
                     飾らない自分を常に求め、都会的で洗練された<br>
                     自分のマインドを持ったワーキングウーマンへ…<br>
@@ -109,6 +110,10 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script ttype="text/javascript" src="./js/hamburgers.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
     <script>
         // 登入註冊區塊
